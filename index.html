@@ -22,6 +22,7 @@
         box-sizing: border-box;
     }
     
+    
     body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
@@ -150,6 +151,8 @@
                     <li><a href="#">Trang chủ</a></li>
                     <li><a href="#">Liên hệ</a></li>
                     <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dự án</a></li>
+                    <li><a href="#">Tin tức</a></li>
                 </ul>
             </nav>
         </div>
@@ -163,7 +166,64 @@
                 <a href="#">Liên hệ ngay</a>
             </div>
         </section>
-
+        <section class="hero-banner">
+            <!-- Thay link ảnh của bạn vào đây -->
+            <img src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/495393091_528578400322447_6746382804949367734_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xoansWwVBE4Q7kNvwGaBvMs&_nc_oc=Adn7-QP7mtnXlDqAIMcaWw53x9ksFoVJ8h3-BmvqD0vJ1eNoHxeZnN5uKXDdwtZxW7M&_nc_zt=23&_nc_ht=scontent.fhan14-5.fna&_nc_gid=u0wtDSTNYzryQz6TOhN5Sw&oh=00_AfEK4EA9u2-iyMDQYZZ1ElOvAZep8uEaJSL9xcRW6p3sKQ&oe=681B3F03" alt="Banner bảo trì">
+            
+            <div class="banner-text">
+                TRANG WEB ĐANG BẢO TRÌ
+                <br>
+                <span style="font-size: 1.5rem;">0389.789.647</span>
+                <br>
+                <a href="#contact" class="contact-btn">Liên hệ ngay</a>
+            </div>
+        </section>
+        
+        <style>
+            /* CSS cho banner mới - thêm vào cuối thẻ <style> hiện có */
+            .hero-banner {
+                width: 150%;
+                height: 600px;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 40px; /* Cách section tiếp theo */
+            }
+            
+            .hero-banner img {
+                width: 150%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .banner-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+                font-size: 3rem;
+                font-weight: bold;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            }
+            
+            .contact-btn {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 25px;
+                background: white;
+                color: red;
+                text-decoration: none;
+                border-radius: 30px;
+                font-weight: bold;
+                transition: all 0.3s;
+            }
+            
+            .contact-btn:hover {
+                background: red;
+                color: white;
+            }
+        </style>
         <!-- Section 2: Dịch vụ -->
         <section class="services">
             <h2>Dịch vụ của chúng tôi</h2>
